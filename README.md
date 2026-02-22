@@ -1,5 +1,6 @@
-ALBANIAN SEMANTIC SEARCH WITH ZONAL TF-IDF
-PROJECT OVERVIEW
+## ALBANIAN SEMANTIC SEARCH WITH ZONAL TF-IDF
+
+### PROJECT OVERVIEW
 
 This project implements an Information Retrieval (IR) system for Albanian text using:
 
@@ -19,9 +20,9 @@ With preprocessing (cleaning + lemmatization)
 
 Without preprocessing (raw text)
 
-METHODOLOGY
+### METHODOLOGY
 
-TEXT PREPARATION (CUSTOM PREPROCESSOR)
+### TEXT PREPARATION (CUSTOM PREPROCESSOR)
 
 Each document’s title and content are merged according to zoning weights (e.g., 0.5–0.5).
 
@@ -35,7 +36,7 @@ Applies lemmatization using Stanza (Albanian model)
 
 @lru_cache is used to optimize repeated lemmatization and improve performance.
 
-FEATURE EXTRACTION (TF-IDF)
+### FEATURE EXTRACTION (TF-IDF)
 
 Documents are transformed into numerical vectors using TfidfVectorizer.
 
@@ -55,7 +56,7 @@ Downweight very frequent terms
 
 Remove rare, non-informative words
 
-ZONAL WEIGHTING
+### ZONAL WEIGHTING
 
 Three title–content configurations are tested:
 
@@ -67,7 +68,7 @@ Three title–content configurations are tested:
 
 This allows analysis of how structural emphasis affects ranking quality.
 
-SEARCH AND RANKING
+### SEARCH AND RANKING
 
 User queries are transformed into TF-IDF vectors.
 
@@ -79,7 +80,7 @@ With preprocessing
 
 Without preprocessing
 
-EVALUATION STRATEGY
+### EVALUATION STRATEGY
 
 Relevance Rating Scale:
 
@@ -99,7 +100,7 @@ Contextual accuracy
 
 Morphological handling
 
-ZONAL COMPARISON RESULTS
+### ZONAL COMPARISON RESULTS
 
 TITLE 0.5 — CONTENT 0.5 (Balanced)
 
@@ -160,9 +161,9 @@ Missed semantic links
 Impact:
 Noticeable improvement in top-ranked results.
 
-GENERAL FINDINGS
+### GENERAL FINDINGS
 
-WITH PREPROCESSING:
+### WITH PREPROCESSING:
 
 Consistent rankings across all zoning strategies
 
@@ -174,7 +175,7 @@ Stronger topic coherence
 
 Higher contextual accuracy
 
-WITHOUT PREPROCESSING:
+### WITHOUT PREPROCESSING:
 
 Higher lexical precision
 
@@ -184,7 +185,7 @@ Rankings based on literal matches
 
 Reduced conceptual relevance
 
-FINAL CONCLUSION
+### FINAL CONCLUSION
 
 Lemmatization significantly enhances meaning-based retrieval in Albanian.
 
@@ -198,7 +199,7 @@ Conceptual relevance
 
 This study demonstrates the measurable advantage of integrating linguistic normalization into classical TF-IDF retrieval pipelines.
 
-TECHNOLOGIES USED
+### TECHNOLOGIES USED
 
 Python
 
@@ -210,6 +211,6 @@ NumPy
 
 Cosine Similarity
 
-LICENSE
+### LICENSE
 
 MIT License
