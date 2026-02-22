@@ -102,9 +102,9 @@ Morphological handling
 
 ### ZONAL COMPARISON RESULTS
 
-TITLE 0.5 — CONTENT 0.5 (Balanced)
+### TITLE 0.5 — CONTENT 0.5 (Balanced)
 
-With preprocessing:
+#### With preprocessing:
 
 Contextually accurate
 
@@ -112,7 +112,7 @@ Semantically balanced
 
 Clear topic grouping
 
-Without preprocessing:
+#### Without preprocessing:
 
 Keyword repetition
 
@@ -120,12 +120,12 @@ Inconsistent ordering
 
 Occasional mismatches
 
-Impact:
+#### Impact:
 Moderate improvement, strongest in mid-ranked results.
 
-TITLE 0.3 — CONTENT 0.7 (Content-heavy)
+### TITLE 0.3 — CONTENT 0.7 (Content-heavy)
 
-With preprocessing:
+#### With preprocessing:
 
 High semantic precision
 
@@ -133,7 +133,7 @@ Stable clustering
 
 Strong topic cohesion
 
-Without preprocessing:
+#### Without preprocessing:
 
 Fragmented scores
 
@@ -141,24 +141,24 @@ Scattered retrieval
 
 Less focused ranking
 
-Impact:
+#### Impact:
 Strong improvement, especially in deeper ranking positions.
 
 TITLE 0.7 — CONTENT 0.3 (Title-heavy)
 
-With preprocessing:
+#### With preprocessing:
 
 Conceptually precise
 
 Meaning-based title matching
 
-Without preprocessing:
+#### Without preprocessing:
 
 Keyword-biased ranking
 
 Missed semantic links
 
-Impact:
+#### Impact:
 Noticeable improvement in top-ranked results.
 
 ### GENERAL FINDINGS
